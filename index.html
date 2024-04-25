@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" type="text" readonly>
+        <div class="button_container">
+            <button id="btn" onclick=" currencydisplay = '';
+            document.querySelector('#display').value = currencydisplay ; "  > c </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '1';
+           document.querySelector('#display').value = currencydisplay ; "> 1 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '2';
+            document.querySelector('#display').value = currencydisplay ; "> 2 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '+';
+            document.querySelector('#display').value = currencydisplay ; "> + </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '3';
+            document.querySelector('#display').value = currencydisplay ; "> 3 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '4';
+            document.querySelector('#display').value = currencydisplay ; "> 4 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '-';
+            document.querySelector('#display').value = currencydisplay ; "> - </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '5';
+            document.querySelector('#display').value = currencydisplay ; "> 5 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '6';
+            document.querySelector('#display').value = currencydisplay ; "> 6 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '*';
+            document.querySelector('#display').value = currencydisplay ; "> * </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '7';
+            document.querySelector('#display').value = currencydisplay ; "> 7 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '8';
+            document.querySelector('#display').value = currencydisplay ; "> 8 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '/';
+            document.querySelector('#display').value = currencydisplay ; "> / </button>
+            <button id="btn" onclick="
+            let result = eval(currencydisplay)
+             currencydisplay = result;
+            document.querySelector('#display').value = currencydisplay ; "> = </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '9';
+            document.querySelector('#display').value = currencydisplay ; "> 9 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '0';
+            document.querySelector('#display').value = currencydisplay ; "> 0 </button>
+            <button id="btn" onclick=" currencydisplay = currencydisplay + '.';
+            document.querySelector('#display').value = currencydisplay ; "> . </button>
+            
+        </div>
+    </div>
+    <script >
+        let currencydisplay = "";
+        document.querySelector("#display").value =currencydisplay ;
+    </script>
+</body>
+
+
+</html>
